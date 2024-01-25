@@ -1,0 +1,59 @@
+15:11:20 **** Clean-only build of configuration Debug for project GPIO_Exercise ****
+make clean 
+rm -rf  ./GPIO_Exercise.o ./gpio.o  sizedummy  GPIO_Exercise.lss  ./GPIO_Exercise.d ./gpio.d  GPIO_Exercise.elf
+ 
+15:11:20 **** Build of configuration Debug for project GPIO_Exercise ****
+make all 
+Building file: ../GPIO_Exercise.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=1000000UL -MMD -MP -MF"GPIO_Exercise.d" -MT"GPIO_Exercise.o" -c -o "GPIO_Exercise.o" "../GPIO_Exercise.c"
+In file included from ../GPIO_Exercise.c:11:
+c:/winavr-20100110/lib/gcc/../../avr/include/util/delay.h:90:3: warning: #warning "Compiler optimizations disabled; functions from <util/delay.h> won't work as designed"
+Finished building: ../GPIO_Exercise.c
+ 
+Building file: ../gpio.c
+Invoking: AVR Compiler
+avr-gcc -Wall -g2 -gstabs -O0 -fpack-struct -fshort-enums -ffunction-sections -fdata-sections -std=gnu99 -funsigned-char -funsigned-bitfields -mmcu=atmega32 -DF_CPU=1000000UL -MMD -MP -MF"gpio.d" -MT"gpio.o" -c -o "gpio.o" "../gpio.c"
+Finished building: ../gpio.c
+ 
+Building target: GPIO_Exercise.elf
+Invoking: AVR C Linker
+avr-gcc -Wl,-Map,GPIO_Exercise.map -mmcu=atmega32 -o "GPIO_Exercise.elf"  ./GPIO_Exercise.o ./gpio.o   
+Finished building target: GPIO_Exercise.elf
+ 
+Invoking: AVR Create Extended Listing
+avr-objdump -h -S GPIO_Exercise.elf  >"GPIO_Exercise.lss"
+Finished building: GPIO_Exercise.lss
+ 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 GPIO_Exercise.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    5694 bytes (17.4% Full)
+(.text + .data + .bootloader)
+
+Data:          8 bytes (0.4% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+15:11:51 **** Incremental Build of configuration Debug for project GPIO_Exercise ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 GPIO_Exercise.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    5694 bytes (17.4% Full)
+(.text + .data + .bootloader)
+
+Data:          8 bytes (0.4% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
