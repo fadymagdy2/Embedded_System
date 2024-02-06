@@ -1,0 +1,20 @@
+12:55:37 **** Incremental Build of configuration Debug for project Potentiometer_Example ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 Potentiometer_Example.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:   10324 bytes (31.5% Full)
+(.text + .data + .bootloader)
+
+Data:         22 bytes (1.1% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+
+12:55:38 Build Finished. 0 errors, 0 warnings. (took 261ms)
+

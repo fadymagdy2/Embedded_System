@@ -1,0 +1,20 @@
+12:55:36 **** Incremental Build of configuration Debug for project Challenge_ADC_Interrupts ****
+make all 
+Invoking: Print Size
+avr-size --format=avr --mcu=atmega32 Challenge_ADC_Interrupts.elf
+AVR Memory Usage
+----------------
+Device: atmega32
+
+Program:    9140 bytes (27.9% Full)
+(.text + .data + .bootloader)
+
+Data:        278 bytes (13.6% Full)
+(.data + .bss + .noinit)
+
+
+Finished building: sizedummy
+ 
+
+12:55:37 Build Finished. 0 errors, 0 warnings. (took 1s.95ms)
+
